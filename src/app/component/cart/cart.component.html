@@ -1,0 +1,56 @@
+<div class="img">
+  <div class="overlay">
+    <div class="container">
+      <div class="row" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="col-md-3" *ngFor="let item of cart; let i = index">
+          <div>
+            <img
+              src="{{ item.strMealThumb }}"
+              alt=""
+              width="100%"
+              height="250px"
+              class="my-3"
+            />
+            <div class="content">
+              <h3 class="text-center">{{ item.strMeal }}</h3>
+              <button (click)="delete(i)">
+                <i class="far fa-trash-alt fa-2x"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="show w-100" *ngIf="cart.length == 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto" data-aos="zoom-in" data-aos-duration="2000">
+        <h5>{{ "there is no food in your cart right now" | titlecase }}</h5>
+      </div>
+      <div
+        class="col-md-6 d-flex justify-content-end"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
+        <img
+          class="imgif"
+          src="../../../assets/images/kisspng-pizza-italian-cuisine-chef-clip-art-vector-cartoon-chef-and-pizza-5a8a8a5888be06.3463858215190288245601.png"
+          alt=""
+          width="50%"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="alert alert-success"
+  *ngIf="alert"
+  data-aos="fade-right"
+  data-aos-duration="2000"
+>
+  <h6>{{ "deleted success " | titlecase }}<i class="fas fa-check"></i></h6>
+</div>

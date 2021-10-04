@@ -1,0 +1,26 @@
+hr {
+  background: wheat;
+  height: 5px;
+}
+h5 {
+  color: wheat !important;
+  font-family: cursive;
+  font-size: 30px;
+  font-style: italic;
+}
+.img {
+  color: #fff;
+  background: url("../assets/images/pexels-elianne-dipp-4666754.jpg") no-repeat
+    center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+  }
+}
+.footer {
+  background: #444456;
+  padding: 5px 0;
+}

@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+h3 {
+  color: wheat;
+  font-family: cursive;
+  font-style: italic;
+}
+.row {
+  margin-top: 70px !important;
+}
+
+img {
+  border-radius: 15%;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: rotate(-15deg);
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+    i {
+      color: #f04646;
+
+      cursor: pointer;
+    }
+  }
+}
+.alert {
+  position: fixed;
+  top: 10%;
+  left: 1%;
+}
+h6 {
+  font-family: cursive;
+  color: blue;
+}

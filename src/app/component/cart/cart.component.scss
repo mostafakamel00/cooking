@@ -1,0 +1,39 @@
+h3 {
+  color: #2b8460;
+  font-size: 18px;
+}
+.img {
+  color: #fff;
+  background: url("../../../assets/images/pexels-callum-hilton-7803167.jpg")
+    no-repeat center fixed !important;
+  background-size: cover !important;
+  .overlay {
+    background: rgba(0, 0, 0, 0.8) !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+  }
+}
+img {
+  transition: all 0.8s ease-in-out;
+  &:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+}
+.show {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imgif {
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+h5 {
+  font-size: 32px;
+  font-style: italic;
+  font-family: cursive;
+  color: rebeccapurple;
+}
